@@ -1,4 +1,4 @@
-<h1 [hidden] ='username === "" '>welcom {{username}}</h1>
+<!-- <h1 [hidden] ='username === "" '>welcom {{username}}</h1>
 <h1 [hidden] = 'username !== "" '>please enter your name</h1>
 
 <label>Username : </label>
@@ -11,10 +11,16 @@
 <input type="password" (input) = "OnRetypePasswordChanged($event)">
 <br>
 <label [hidden] = "isPasswordMatch || password === '' ">Passwords Do Not Match !</label>
-<label [hidden] = "!isPasswordMatch"> Passwords Match !</label>
+<label [hidden] = "!isPasswordMatch"> Passwords Match !</label> -->
 
 <!-- ========================================================= -->
-<br>
-<br>
-<br>
-<app-part9></app-part9>
+
+
+<!-- <app-part10></app-part10> -->
+<app-star [rating]=5></app-star>
+<app-star [rating]=3></app-star>
+<app-star [rating]=2.5></app-star>
+<app-star [rating]=4.5></app-star>
+<app-star [rating]=1.5></app-star>
+
+<!-- <app-star></app-star> -->
