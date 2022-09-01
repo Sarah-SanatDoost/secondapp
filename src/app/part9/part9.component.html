@@ -1,0 +1,25 @@
+ <!-- <p *ngFor = "let user of users">
+    {{ user }}
+</p>  -->
+
+<!-- <p *ngFor = "let user of usersObj ; let i=index">
+    {{user.id + ": " + user.name}}
+</p>  -->
+
+
+<br>
+<!-- <p *ngIf = " iscorrect ; else cond ">salam </p>
+<ng-template #cond>bye bye</ng-template> -->
+
+<button (click)="addNewUser()">add new user</button>
+
+<p *ngFor = "let user of usersObj ; let i=index ; trackBy: trackByFunc">
+    {{user.id + ": " + user.name}}
+</p> 
+
+<br>
+<div [ngSwitch] = "SwithPropery">
+    <app-switch-case1 *ngSwitchCase ="'a'"></app-switch-case1>
+    <app-switch-case2 *ngSwitchCase ="'b'"></app-switch-case2>
+    <app-switch-case3 *ngSwitchCase ="'c'"></app-switch-case3>
+</div>
