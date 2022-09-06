@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -8,9 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class StarComponent implements OnInit {
 
 
+  @Output() starClick = new EventEmitter();
+
   @Input() rating: number = 4;
+
   width: number = 80;
- 
+
   constructor() { }
 
   ngOnInit(): void {
@@ -18,4 +21,10 @@ export class StarComponent implements OnInit {
     this.width = this.rating * 80 / 5;
   }
 
+
+  // now every where that use onclick() , emit what in ()
+  public onClick() {
+
+    this.starClick.emit(this.rating);
+  }
 }
