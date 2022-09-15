@@ -9,7 +9,6 @@ export class StarComponent implements OnInit {
 
 
   @Output() starClick = new EventEmitter();
-
   @Input() rating: number = 4;
 
   width: number = 80;

@@ -12,6 +12,9 @@ import { SwitchCase2Component } from './part9/switch-case2/switch-case2.componen
 import { SwitchCase3Component } from './part9/switch-case3/switch-case3.component';
 import { Part10Component } from './part10/part10.component';
 import { StarComponent } from './part10/star/star.component';
+import { Part11Component } from './part11/part11.component';
+import { AddUserComponent } from './part11/add-user/add-user.component';
+import { UserTableComponent } from './part11/user-table/user-table.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { StarComponent } from './part10/star/star.component';
     SwitchCase2Component,
     SwitchCase3Component,
     Part10Component,
-    StarComponent
+    StarComponent,
+    Part11Component,
+    AddUserComponent,
+    UserTableComponent
     
   ],
   imports: [
